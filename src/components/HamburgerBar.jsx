@@ -15,16 +15,28 @@ const HamburgerBar = () => {
       </div>
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-pink-200 p-4 flex flex-col items-center space-y-4 shadow-lg md:hidden">
-          <a href="#" className="text-pink-900 font-medium hover:text-pink-600">
+          <a
+            href="#Hjem"
+            className="text-pink-900 font-medium hover:text-pink-600"
+          >
             Hjem
           </a>
-          <a href="#" className="text-pink-900 font-medium hover:text-pink-600">
+          <a
+            href="#MakiRolls"
+            className="text-pink-900 font-medium hover:text-pink-600"
+          >
             Maki Rolls
           </a>
-          <a href="#" className="text-pink-900 font-medium hover:text-pink-600">
+          <a
+            href="#Sashimi"
+            className="text-pink-900 font-medium hover:text-pink-600"
+          >
             Sashimi
           </a>
-          <a href="#" className="text-pink-900 font-medium hover:text-pink-600">
+          <a
+            href="#Nigiri"
+            className="text-pink-900 font-medium hover:text-pink-600"
+          >
             Nigiri
           </a>
         </div>
