@@ -1,4 +1,6 @@
 import { useMenu } from "../context/MenuContext";
+import { IoCloseSharp } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const HamburgerBar = () => {
   const { isOpen, toggleMenu } = useMenu();
@@ -7,9 +9,13 @@ const HamburgerBar = () => {
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-pink-900">
           {isOpen ? (
-            <span className="text-2xl">✖</span>
+            <span className="text-2xl">
+              <IoCloseSharp />
+            </span>
           ) : (
-            <span className="text-2xl">☰</span>
+            <span className="text-2xl">
+              <GiHamburgerMenu />
+            </span>
           )}
         </button>
       </div>
